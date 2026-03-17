@@ -26,7 +26,7 @@ function appendItem(data, timeframeIndex = 0) {
   });
 }
 
-fetch("/data.json")
+fetch("./data.json")
   .then((response) => {
     if (!response.ok) throw new Error("Erreur de chargement");
     return response.json();
